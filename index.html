@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Lær hvordan du implementerer Open Graph og Twitter Cards på din nettside">
+    <meta property="og:description" content="I denne artikkelen får du vite hva Open Graph og Twitter Cards er, og hvordan du kan utnytte disse teknologiene på din nettside.">
+    <meta property="og:url" content="https://toremake.github.io/webutvikling/some/artikkel_med_OG-TC.html">
+    <meta property="og:image" content="https://toremake.github.io/webutvikling/some/img/illustration_1200px.jpg">
+    <meta property="og:image:alt" content="Illustrasjon av snakkeboble med hjerte i">
+    <meta property="og:site_name" content="WebDevs">
+    <meta property="og:locale" content="nb_NO">
+    <meta property="og:type" content="article">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lær hvordan du implementerer Open Graph og Twitter Cards på din nettside">
+    <meta name="twitter:description" content="I denne artikkelen får du vite hva Open Graph og Twitter Cards er, og hvordan du kan utnytte disse teknologiene på din nettside.">
+    <meta name="twitter:site" content="@ToremakeHIOF">
+    <meta name="twitter:creator" content="@akerbak">
+    <meta name="twitter:image" content="https://toremake.github.io/webutvikling/some/img/illustration_1200px.jpg">
+    <meta name="twitter:image:alt" content="Illustrasjon av snakkeboble med hjerte i">
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="font/css/fontawesome.css" rel="stylesheet">
+    <link href="font/css/brands.css" rel="stylesheet">
+    <link href="font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="own-fonts/style.css">
+    <!-- har brukt icoMoon for å konvertere egenlagd logo til font, link: https://icomoon.io -->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Hjem</title>
+</head>
+
+<body>
+    <div id="banner">
+        <div class="banner-title">OBLIG-3</div>
+    </div>
+    <div id="grid-container">
+        <header>
+            <a href="javascript:void(0)" id="ham-icon" onclick="hamMenu()"><i class="fa-solid fa-bars"></i></a>
+            <div class="nav-header">OBLIG-3</div>
+            <nav>
+                <ul id="main-menu">
+                    <li><a href="index.html"><i class="icon-logologo-removebg-preview"
+                                style="vertical-align: middle;margin: auto;"></i></a></li>
+                    <!-- inline style css for å få logoen sentrert -->
+                    <li><a href="SEO.html">UU vs SEO</a></li>
+                    <li><a href="cms.html">CMS</a></li>
+                    <li><a href="analyse.html">ANALYSE</a></li>
+                    <li><a href="kontakt.html">KONTAKT OSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Webutvilking oblig-3</h1>
+            <i class="fa-solid fa-hippo"></i>
+            <h2>Velkommen til min nettside!
+                <br>
+                Hvis det er noe du lurer på er det bare å trykke på knappen nedenfor.
+            </h2>
+            <a class="button" href="kontakt.html">Kontakt oss</a>
+            <section>
+                <article>
+                    <h3>SEO</h3>
+                    <img src="images/150x150.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="SEO.html">Les mer</a>
+                </article>
+                <article>
+                    <h3>CMS</h3>
+                    <img src="images/150x150.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="cms.html">Les mer</a>
+                </article>
+                <article>
+                    <h3>Analyse</h3>
+                    <img src="images/150x150.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="analyse.html">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/150x150.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="kontakt.html">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/150x150.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/150x150.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/200x300.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/200x300.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/200x300.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="#">Les mer</a>
+                </article>
+                <article>
+                    <h3>Blank</h3>
+                    <img src="images/200x300.png" alt="placeholder for artikkelbilde">
+                    <p>"Ingress"</p>
+                    <a href="#">Les mer</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <ul id="socials">
+                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-phone"></i></a></li>
+            </ul>
+            <a href="javascript:void(0)" id="hide-icon" onclick="hideSocials()"><i class="fa-solid fa-minus"></i></a>
+        </footer>
+    </div>
+    <script src="javascript/script.js"></script>
+</body>
+
+</html>
