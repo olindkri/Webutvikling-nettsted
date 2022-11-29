@@ -316,9 +316,9 @@ a.button:active {
 iframe {
   width: 100%;
   border-radius: 1rem;
-  height: 355px; 
+  height: 355px;
   border: 0;
-  overflow: hidden; 
+  overflow: hidden;
   margin: 0;
 }
 
@@ -437,18 +437,20 @@ iframe {
   margin: 0.5rem 0;
 }
 
-input[type=text], select, textarea {
-  width: 100%; 
-  padding: 12px; 
-  border: 1px solid #ccc; 
-  border-radius: 1rem; 
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 1rem;
   box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical 
+  resize: vertical;
 }
 
-input[type=submit] {
+input[type="submit"] {
   background-color: #7abd93;
   color: white;
   padding: 12px 5vw;
@@ -459,7 +461,7 @@ input[type=submit] {
   transition: 200ms;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #a2b39f;
   transform: scale(1.1);
   transition: 200ms;
@@ -663,15 +665,14 @@ input[type=submit]:hover {
     font-size: 1rem;
   }
 
-  input[type=submit] {
+  input[type="submit"] {
     font-size: 1.2rem;
   }
 
   .contact {
     max-width: 100%;
-    margin: 0
+    margin: 0;
   }
-  
 }
 
 @media only screen and (max-width: 370px) {
@@ -733,5 +734,4 @@ input[type=submit]:hover {
     font-size: 1rem;
     letter-spacing: 0.2vw;
   }
-  
 }
