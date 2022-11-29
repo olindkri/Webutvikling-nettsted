@@ -27,12 +27,13 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-family: "Quicksand", sans-serif;
 }
 
 p {
   font-family: "Heebo", sans-serif;
+  font-size: 1.1rem;
 }
 
 #grid-container {
@@ -111,13 +112,13 @@ article img {
   height: auto;
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
-  margin: 2vw 0;
+  margin: 1vw 0;
 }
 
 .main-article p {
   line-height: 1.8;
   text-align: left;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0;
 }
 
@@ -322,7 +323,7 @@ iframe {
 
 .cell-h {
   background-color: #a2b39f;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   border-radius: 5px;
   text-align: left;
   padding: 0 1vw;
@@ -331,6 +332,7 @@ iframe {
 .cell p {
   margin: 1vw;
   border-radius: 0.5rem;
+  font-size: 1.3rem;
   padding: 1vw;
   background-color: #d2dfcf;
 }
@@ -410,6 +412,11 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+.active {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
 @media only screen and (min-width: 900px) {
   #main-menu {
     display: block !important;
@@ -486,6 +493,10 @@ input[type="submit"]:hover {
     font-family: "Quicksand", sans-serif;
   }
 
+  p {
+    font-size: 1rem;
+  }
+
   footer ul li a {
     font-size: 1.4rem;
   }
@@ -536,7 +547,7 @@ input[type="submit"]:hover {
   }
 
   .main-article p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .main-article ul li {
@@ -546,6 +557,14 @@ input[type="submit"]:hover {
 
   .contact {
     max-width: 80%;
+  }
+
+  .cell-h {
+    font-size: 1.3rem;
+  }
+  
+  .cell p {
+    font-size: 1.2rem;
   }
 }
 
@@ -566,13 +585,13 @@ input[type="submit"]:hover {
     font-size: 1.1rem;
   }
 
-  p {
-    font-size: 1rem;
-  }
-
   .main-article {
     padding: 0.5rem;
     margin: 0;
+  }
+
+  .main-article p {
+    font-size: 1rem;
   }
 
   .sources ol li {
@@ -596,6 +615,14 @@ input[type="submit"]:hover {
     max-width: 100%;
     margin: 0;
   }
+
+  .cell-h {
+    font-size: 1.1rem;
+  }
+  
+  .cell p {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 370px) {
@@ -614,10 +641,6 @@ input[type="submit"]:hover {
     font-family: "Quicksand", sans-serif;
   }
 
-  p {
-    font-size: 0.9rem;
-  }
-
   .main-article p {
     font-size: 0.9rem;
   }
@@ -632,10 +655,6 @@ input[type="submit"]:hover {
 
   #hide-icon {
     font-size: 1rem;
-  }
-
-  .main-article img {
-    display: none;
   }
 
   .main-article ul li {

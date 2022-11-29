@@ -53,7 +53,7 @@
                                 style="vertical-align: middle;margin: auto;"></i></a></li>
                     <li><a href="SEO.html">UU vs SEO</a></li>
                     <li><a href="cms.html">CMS</a></li>
-                    <li><a href="analyse.html">ANALYSE</a></li>
+                    <li><a class="active" href="analyse.html">ANALYSE</a></li>
                     <li><a href="kontaktoss.html">KONTAKT OSS</a></li>
                 </ul>
             </nav>
@@ -63,6 +63,168 @@
             <section>
                 <article class="main-article">
                     <h1>ANALYSE</h1>
+                    <p>På denne siden vil du kunne lese en oversikt over analyseresultater på denne siden og hvordan jeg
+                        har håndtert eventuelle feil eller annet. Jeg brukte Lighthouse til å analysere siden min,
+                        lighthouse er forhåndsinnstalert i inspeksjonsverktøyet på de fleste nettlesere. Lighthouse har
+                        analysert koden til nettsiden og gitt meg tilbakemeldinger på hva jeg kan gjøre bedre innenfor
+                        UU, SEO, Best Practices og SEO.</p>
+                    <img src="images/Desktop analytics.png" alt="Bilde av lighthouse analyse av pc nettsiden">
+                    <img src="images/Mobile analytics.png" alt="Bilde av lighthouse analyse av mobil nettsiden">
+                    <p>Bildene over er tilsvarende anaylse til både PC og mobil, PC til venstre og mobil til høyre. Noen
+                        umiddelbare ting man legger merke til er poengsummen på performance og best practices, disse
+                        differerer litt mellom mobil og PC. Performance kan lett forklares og skyldes med at mobile
+                        enhenter ofte er treigere en PC-er i disse tider. Det er ikke mye forksjell, men det er som
+                        regel litt.
+                        <br>
+                        <br>
+                        Hvorfor best practises sin poengsum er lavere på mobil i forhold til PC skyldes en tilbakemelding jeg fikk av lighthouse analysen tidligere.
+                    </p>
+
+                    <img src="images/low res image.png" alt="Bilde av en tilbakemelding av analysen som sier at bildestørrelsen er for liten.">
+
+                    <p>Denne tilbakemeldingen angår et placeholder bilde som tydeligvis ansees som for utydelig eller liten. Dette fikset jeg lett ved å kun tildele relevante bilder til de tilsvarende artikkelboksene på hjemsiden.</p>
+
+                    <div id="table">
+                        <div class="tablegrid" style="grid-template-columns: auto auto auto">
+                            <div class="cell-h"></div>
+                            <div class="cell-h">
+                                <h2>FØR</h2>
+                            </div>
+                            <div class="cell-h">
+                                <h2>ETTER</h2>
+                            </div>
+                            <div class="cell-h">
+                                <p>INNHOLD</p>
+                            </div>
+                            <div class="cell">
+                                <p>Struktur</p>
+                            </div>
+                            <div class="cell">
+                                <p>Keywords</p>
+                            </div>
+                            <div class="cell-h">
+                                <p>DESIGN</p>
+                            </div>
+                            <div class="cell">
+                                <p>Media queries</p>
+                            </div>
+                            <div class="cell">
+                                <p>Mobile first</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2>WCAG 2.0 rettningslinjer</h2>
+                    <h3>Nedenfor finner du en tabell som inneholder alle WCAG 2.0 rettningslinjene samt
+                        suksesskriteriene som denne nettsiden følger.</h3>
+                    <div id="table">
+                        <div class="tablegrid" style="grid-template-columns: auto auto">
+                            <div class="cell-h">
+                                <h2>Rettningslinjer</h2>
+                            </div>
+                            <div class="cell-h">
+                                <h2>Suksesskriterier <br> Nivå</h2>
+                            </div>
+                            <div class="cell">
+                                <p>1.1 Tekstalternativ</p>
+                            </div>
+                            <div class="cell">
+                                <p>1.1.1 Ikke-tekstlig innhold (Nivå A)</p>
+                            </div>
+                            <div class="cell">
+                                <p>1.2 Tidsbaserte medier</p>
+                            </div>
+                            <div class="cell">
+                                <p></p>
+                            </div>
+                            <div class="cell">
+                                <p>1.3 Mulig å tilpasse</p>
+                            </div>
+                            <div class="cell">
+                                <p>1.3.1 Informasjon og relasjoner (Nivå A)</p>
+                                <p>1.3.2 Meningsfylt rekkefølge (Nivå A)</p>
+                                <p>1.3.3 Sensoriske egenskaper (Nivå A)</p>
+                            </div>
+                            <div class="cell">
+                                <p>1.4. Mulig å skille fra hverandre</p>
+                            </div>
+                            <div class="cell">
+                                <p>1.4.1 Bruk av farge (Nivå A)</p>
+                                <p>1.4.3 Kontrast (minimum, Nivå AA)</p>
+                                <p>1.4.4 Endring av tekststørrelse (Nivå AA)</p>
+                            </div>
+                            <div class="cell">
+                                <p>2.1 Tilgjengelig med tastatur</p>
+                            </div>
+                            <div class="cell">
+                                <p>2.1.1 Tastatur (Nivå A)</p>
+                                <p>2.1.2 Ingen tastaturfelle (Nivå A)</p>
+                            </div>
+                            <div class="cell">
+                                <p>2.2 Nok tid</p>
+                            </div>
+                            <div class="cell">
+                                <p></p>
+                            </div>
+                            <div class="cell">
+                                <p>2.3 Anfall</p>
+                            </div>
+                            <div class="cell">
+                                <p>2.3.1 Terskelverdi på maksimalt tre glimt (Nivå A)</p>
+                                <p>2.3.2 Tre glimt (Nivå AAA)</p>
+                            </div>
+                            <div class="cell">
+                                <p>2.4 Navigerbar</p>
+                            </div>
+                            <div class="cell">
+                                <p>2.4.3 Fokusrekkefølge (Nivå A)</p>
+                                <p>2.4.4 Formål med lenke (i kontekst, Nivå A)</p>
+                                <p>2.4.6 Overskrifter og ledetekster (Nivå AA)</p>
+                                <p>2.4.7 Synlig fokus (Nivå AA)</p>
+                                <p>2.4.8 Lokalisering (Nivå AAA)</p>
+                            </div>
+                            <div class="cell">
+                                <p>3.1 Leselig</p>
+                            </div>
+                            <div class="cell">
+                                <p>3.1.1 Språk på siden (Nivå A)</p>
+                            </div>
+                            <div class="cell">
+                                <p>3.2 Forutsigbar</p>
+                            </div>
+                            <div class="cell">
+                                <p>3.2.2 Inndata (Nivå A)</p>
+                                <p>3.2.3 Konsekvent navigering (Nivå AA)</p>
+                                <p>3.2.4 Konsekvent identifikasjon (Nivå AA)</p>
+                            </div>
+                            <div class="cell">
+                                <p>3.3. Inndatahjelp</p>
+                            </div>
+                            <div class="cell">
+                                <p>3.3.2 Ledetekster eller instruksjoner (Nivå A)</p>
+                            </div>
+                            <div class="cell">
+                                <p>4.1 Kompatibel</p>
+                            </div>
+                            <div class="cell">
+                                <p>4.1.1 Parsing (oppdeling, Nivå A)</p>
+                                <p>4.1.2 Navn, rolle, verdi (Nivå A)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sources">
+                        <h3>Kilder:</h3>
+                        <ol>
+                            <li>Eggert, E (2019, 4. Oktober) - How to Meet WCAG: <a
+                                    href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">link</a>
+                            </li>
+                            <li>uutilsynet - WCAG sortert etter prinsipp: <a
+                                    href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713">link</a>
+                            </li>
+                        </ol>
+                    </div>
                 </article>
             </section>
         </main>
