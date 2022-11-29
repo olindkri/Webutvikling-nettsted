@@ -94,6 +94,8 @@ article {
 
 article img {
   border-radius: 1rem;
+  width: 200px;
+  height: auto;
 }
 
 .main-article {
