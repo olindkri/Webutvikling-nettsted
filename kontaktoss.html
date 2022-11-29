@@ -8,17 +8,17 @@
     <meta name="description" content="Min eksamen i webutvikling!">
 
     <!-- Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://olindkri.github.io/Webutvikling-nettsted/kontaktoss.html" />
-    <meta property="og:title" content="Eksamensnettside webutvikling" />
-    <meta property="og:description" content="Dette er min første fullførte nettside innenfor webutvikling emne." />
-    <meta property="og:image" content="https://olindkri.github.io/Webutvikling-nettsted/images/stockimage.jpg" />
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="https://olindkri.github.io/Webutvikling-nettsted/index.html" >
+    <meta property="og:title" content="Eksamensnettside webutvikling" >
+    <meta property="og:description" content="Dette er min første fullførte nettside innenfor webutvikling emne." >
+    <meta property="og:image" content="https://olindkri.github.io/Webutvikling-nettsted/images/stockimage.jpg" >
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Eksamensnettside webutvikling" />
-    <meta name="twitter:description" content="Dette er min første fullførte nettside innenfor webutvikling emne." />
-    <meta name="twitter:image" content="https://olindkri.github.io/Webutvikling-nettsted/images/stockimage.jpg" />
+    <meta name="twitter:card" content="summary_large_image" >
+    <meta name="twitter:title" content="Eksamensnettside webutvikling" >
+    <meta name="twitter:description" content="Dette er min første fullførte nettside innenfor webutvikling emne." >
+    <meta name="twitter:image" content="https://olindkri.github.io/Webutvikling-nettsted/images/stockimage.jpg" >
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -66,13 +66,32 @@
                     <ul>
                         <li><i class="fa-solid fa-building-columns"></i> Østfold University College</li>
                         <li><i class="fa-solid fa-location-pin"></i> B R A Veien 4, 1757 Halden</li>
-                        <li><i class="fa-solid fa-phone"></i> 69 60 80 00</li>
-                        <li><i class="fa-solid fa-graduation-cap"></i> 7000 studenter</li>
+                        <li><i class="fa-solid fa-phone"></i> (+47)69 60 80 00</li>
+                        <li><i class="fa-solid fa-envelope"></i> postmottak@hiof.no</li>
                     </ul>
-                    <iframe height="355" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        id="gmap_canvas"
+
+                    <iframe id="gmap_canvas"
                         src="https://maps.google.com/maps?width=500&amp;height=355&amp;hl=en&amp;q=B%20R%20A%20Veien%204%20Halden+(Hi%C3%98)&amp;t=k&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-                        <!-- Brukte denne siden for å legge til adresse med kart: https://maps-generator.com -->
+                    <!-- Brukte denne siden for å legge til adresse med kart: https://maps-generator.com -->
+
+                    <h2>KONTAKTSKJEMA</h2>
+                    <h3>Skriv gjerne i feltene nedenfor hvis du lurer på noe (:</h3>
+
+                    <div class="contact-form">
+                        <form>
+                            <label for="name">Fullt Navn</label>
+                            <input type="text" id="name" name="fullname" placeholder="Navn...">
+
+                            <label for="mail">Mail adresse</label>
+                            <input type="text" id="mail" name="mail" placeholder="Mail...">
+
+                            <label for="message">Melding</label>
+                            <textarea id="message" name="message" placeholder="Skriv her..."
+                                style="height:200px"></textarea>
+
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
                 </article>
             </section>
         </main>
@@ -97,7 +116,7 @@
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0"
         nonce="9EB282XZ"></script>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async src="https://platform.twitter.com/widgets.js"></script>
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
 
