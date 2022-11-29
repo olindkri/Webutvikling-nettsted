@@ -114,7 +114,7 @@ article img {
   height: auto;
   box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
-  margin: 1vw 0;
+  margin: 0.5vw 0;
 }
 
 .main-article p {
@@ -321,6 +321,7 @@ iframe {
   grid-gap: 5px;
   width: 100%;
   font-family: "Quicksand", sans-serif;
+  margin-top: 1vw;
 }
 
 .cell-h {
@@ -526,7 +527,7 @@ input[type="submit"]:hover {
     display: inline-block;
     padding: 1rem;
     font-size: 1.5rem;
-    color: #464e45;
+    color: #252825;
     font-family: "Overpass", sans-serif;
   }
 

@@ -49,7 +49,7 @@
             <div class="nav-header">EKSAMEN</div>
             <nav>
                 <ul id="main-menu">
-                    <li><a href="index.html"><i class="icon-logologo-removebg-preview"
+                    <li><a href="index.html" aria-label="logo"><i class="icon-logologo-removebg-preview"
                                 style="vertical-align: middle;margin: auto;"></i></a></li>
                     <li><a href="SEO.html">UU vs SEO</a></li>
                     <li><a href="cms.html">CMS</a></li>
@@ -63,26 +63,96 @@
             <section>
                 <article class="main-article">
                     <h1>ANALYSE</h1>
-                    <p>På denne siden vil du kunne lese en oversikt over analyseresultater på denne siden og hvordan jeg
-                        har håndtert eventuelle feil eller annet. Jeg brukte Lighthouse til å analysere siden min,
+                    <p style="color: rgba(69, 69, 69, 0.867);">Tabell med WCAG 2.0 rettningslinjer er nederst på siden.
+                    </p>
+                    <p>På denne siden vil du kunne lese en oversikt over analyseresultater på denne nettsiden og hvordan
+                        jeg
+                        har håndtert eventuelle feil eller annet. Jeg brukte oftest Lighthouse til å analysere siden
+                        min,
                         lighthouse er forhåndsinnstalert i inspeksjonsverktøyet på de fleste nettlesere. Lighthouse har
-                        analysert koden til nettsiden og gitt meg tilbakemeldinger på hva jeg kan gjøre bedre innenfor
+                        analysert koden til nettsiden min og gitt meg tilbakemeldinger på hva jeg kan gjøre bedre
+                        innenfor
                         UU, SEO, Best Practices og SEO.</p>
-                    <img src="images/Desktop analytics.png" alt="Bilde av lighthouse analyse av pc nettsiden">
-                    <img src="images/Mobile analytics.png" alt="Bilde av lighthouse analyse av mobil nettsiden">
-                    <p>Bildene over er tilsvarende anaylse til både PC og mobil, PC til venstre og mobil til høyre. Noen
+                    <img src="images/Desktop analytics.webp" alt="Bilde av lighthouse analyse av pc nettsiden">
+                    <img src="images/Mobile analytics.webp" alt="Bilde av lighthouse analyse av mobil nettsiden">
+                    <p>Bildene over er tilsvarende analyse til både PC og mobil, PC til venstre og mobil til høyre. Noen
                         umiddelbare ting man legger merke til er poengsummen på performance og best practices, disse
                         differerer litt mellom mobil og PC. Performance kan lett forklares og skyldes med at mobile
                         enhenter ofte er treigere en PC-er i disse tider. Det er ikke mye forksjell, men det er som
                         regel litt.
                         <br>
                         <br>
-                        Hvorfor best practises sin poengsum er lavere på mobil i forhold til PC skyldes en tilbakemelding jeg fikk av lighthouse analysen tidligere.
+                        Hvorfor best practises sin poengsum er lavere på mobil i forhold til PC skyldes en
+                        tilbakemelding jeg fikk av lighthouse analysen tidligere.
                     </p>
 
-                    <img src="images/low res image.png" alt="Bilde av en tilbakemelding av analysen som sier at bildestørrelsen er for liten.">
+                    <img src="images/low res image.webp"
+                        alt="Bilde av en tilbakemelding av analysen som sier at bildestørrelsen er for liten.">
 
-                    <p>Denne tilbakemeldingen angår placeholder bildene som tydeligvis ansees som for utydelig eller liten. Dette fikset jeg lett ved å kun tildele relevante bilder til de tilsvarende artikkelboksene på hjemsiden.</p>
+                    <p>Denne tilbakemeldingen angår placeholder bildene som tydeligvis ansees som for utydelig eller
+                        liten. Dette fikset jeg lett ved å kun tildele relevante bilder til de tilsvarende
+                        artikkelboksene på hjemsiden. Dette ordnet tilbakemeldingen og ordnet opp på differansen mellom
+                        mobil og PC. Resten av tilbakemeldingene jeg fikk på Best practise var relatert til share
+                        scriptene til sociale medier. Jeg fant umiddelbart ikke noen fiks på dette, men å bytte
+                        nettleser fra Opera til Chrome fjernet en av de og løftet summen min på Best Practise til 83. De
+                        to andre tilbakemeldingene finner jeg ikke noen fiks på og får jeg desverre ikke gjort noe med,
+                        fordi da får jeg ikke inkludert
+                        en av kravene til oppgaven som er SOME share butttons, det er nemlig de som er grunnlaget i
+                        følge lighthouse. Chrome bytte fikk samme resultat på alle
+                        sidene.
+                        <br>
+                        <br>
+                        Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det er et error som jeg
+                        fikset fort. Dette var nemlig kun et "Link are not crawlable" error som betyr at en link eller
+                        tilsvarende element ikke leder deg til noen side. Lighthouse ga meg en god forklaring på
+                        hvilke elementer som ledet til dette.
+                    </p>
+                    <img src="images/crawl.webp"
+                        alt="Bilde av lighthouse som sier at en link i koden ikke er crawlable.">
+                    <p>Jeg fjernet denne tilbakemeldingen ved å gjøre om "a" elementet til en "div". Dette fjernet
+                        tilbakemeldingen og ga meg et resultat med 100 poengsum på SEO. endringen fjernet ingen
+                        funksjonalitet.
+                        <br>
+                        <br>
+                        Videre til accessibility der jeg fikk en poengsum på 90 hadde jeg fortsatt 2 tilbakemeldinger
+                        som virket relativt lett å fikse. Disse to var fargekontrast og at overskriftene ikke var i
+                        rekkefølge, altså at et h3 element var over h2 eller h1. Jeg fikk gode tilbakemeldinger på
+                        hvilke kontraster som burde justeres og hvilke overskrifter som var plassert feil.
+                    </p>
+                    <img src="images/contrast.webp" alt="Bilde av tilbakemelding fra lighthouse om fargekontrast.">
+                    <img src="images/header.webp"
+                        alt="Bilde av tilbakemelding fra lighthouse om overskrifter som er feil plassert">
+                    <p>Jeg ordet disse ved å fjerne den feilplasserte overskriften som kun refferte til at det var
+                        kilder på bunnen av siden, jeg følte behovet for denne overskriften ikke vår serlig nædvendig.
+                        Kontrasten på overskriten endret jeg til slutt i stilarket. Etter at jeg hadde gjort begge disse
+                        endringene fikk jeg en accessibility poengsum på 100.
+                        <br>
+                        <br>
+                        For å få 100 accessibility på tvers av alle enheter analyserte jeg også PC siden med lighthouse
+                        og fikk en tilbakemelding som ikke mobilformatet møtte på. Dette var at logoen på hjemsiden
+                        min ikke hadde en form for alt tekst, dette følte jeg opprinelig at den ikke hadde noen behov
+                        for, men jeg endte opp med å legge til en aria-label for å nå 100 accessibility.
+                    </p>
+                    <img src="images/aria.webp" alt="Bilde av tilbakemelding fra lighthouse angående logo uten alt tekst.">
+                    <p>Å legge til aria-label på logoen fjernet tilbakemeldingen og jeg endte med 100 accessibility
+                        på både PC og mobil.
+                        <br>
+                        <br>
+                        Performance aspektet av analysen varierer svært mye, den kan variere fra 80 opp til 96 fra hver
+                        analyse, (Mobilresultatene er vanligvis dårligst, PC når høyere resultater som 96 poengsum).
+                        Grunnlaget til hvorfor jeg får disse varierende resultatene har jeg fått
+                        tilbakemeldinger om av lighthouse, fontawesome, normalize.css og bildestørrelsene mine påvirker
+                        hastigheten. fontawesome og normalize.css får jeg ikke gjort så mye med, så jeg gjør det jeg kan
+                        og endrer alle bildeformatene fra jpg og png til webp for mer hastighet. Etter endringene av
+                        bildeformatet kjørte jeg lighthouse på nytt, men fikk ingen betraktelige endringer i forhold til
+                        hastighet.
+                    </p>
+                    <img src="images/performance.webp" alt="Bilde an tilbakemelding fra lighthouse om hastigheten på nettsiden.">
+                    <p>Hvis vi skal sammenligne resultatene fra starten til slutten av prosessen vil jeg si at det ikke var serlig myeå pirke på, men jeg føler jeg endte med gode resultater. Nedenfor ser du de nye lighthouse resultatene etter implementasjonen av analysekritikken.</p>
+                    <img src="images/After desktop.webp" alt="Bilde av PC lighthouse resultatene etter implementasjonen">
+                    <img src="images/After mobile.webp" alt="Bilde av mobil lighthouse resultatene etter implementasjonen">
+
+                    <h2>Oversikt over endringer etter analyse (Med resultater)</h2>
 
                     <div id="table">
                         <div class="tablegrid" style="grid-template-columns: auto auto auto">
@@ -103,13 +173,58 @@
                                 <p>Anbefalte bildestørrelser (75 Best practice)</p>
                             </div>
                             <div class="cell-h">
-                                <p>DESIGN</p>
+                                <p>Nettleser</p>
                             </div>
                             <div class="cell">
-                                <p>Media queries</p>
+                                <p>Nettleser tull (75 Best practise)</p>
                             </div>
                             <div class="cell">
-                                <p>Mobile first</p>
+                                <p>Chrome fix (83 Best practise)</p>
+                            </div>
+                            <div class="cell-h">
+                                <p>Crawlable link</p>
+                            </div>
+                            <div class="cell">
+                                <p> "a" element som ikke var "crawlable" (92 SEO)</p>
+                            </div>
+                            <div class="cell">
+                                <p>Endret "a" element til "div" (100 SEO) </p>
+                            </div>
+                            <div class="cell-h">
+                                <p>Fargekontrast</p>
+                            </div>
+                            <div class="cell">
+                                <p>Svak konstrast på mobiloverskrift (90 Accessibility)</p>
+                            </div>
+                            <div class="cell">
+                                <p>God kontrast på mobiloverskrift (96 Accessibility)</p>
+                            </div>
+                            <div class="cell-h">
+                                <p>Overskrift</p>
+                            </div>
+                            <div class="cell">
+                                <p>Feilplassert overskrift (96 Accessibility) </p>
+                            </div>
+                            <div class="cell">
+                                <p>Rett plasserte overskrifter (100 Accessibility)</p>
+                            </div>
+                            <div class="cell-h">
+                                <p>Aria-label</p>
+                            </div>
+                            <div class="cell">
+                                <p>Logo hadde ingen aria-label (PC 96 Accessibility) </p>
+                            </div>
+                            <div class="cell">
+                                <p>La til aria-label (100 Accessibility)</p>
+                            </div>
+                            <div class="cell-h">
+                                <p>Bildestørrelse</p>
+                            </div>
+                            <div class="cell">
+                                <p>Mange jpg/png filer med treig hastighet </p>
+                            </div>
+                            <div class="cell">
+                                <p>Endret filene til webp (Ingen betraktelige endringer)</p>
                             </div>
                         </div>
                     </div>
