@@ -315,6 +315,11 @@ iframe {
   justify-content: flex-start;
 }
 
+#table-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .tablegrid {
   display: grid;
   grid-template-columns: auto auto auto auto;
