@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hjem</title>
+    <title>Analyse</title>
     <meta name="description" content="Min eksamen i webutvikling!">
 
     <!-- Facebook -->
@@ -63,16 +63,20 @@
             <section>
                 <article class="main-article">
                     <h1>ANALYSE</h1>
-                    <p style="color: rgba(69, 69, 69, 0.867);">Tabell med WCAG 2.0 rettningslinjer er nederst på siden.
-                    </p>
-                    <p>På denne siden vil du kunne lese en oversikt over analyseresultater på denne nettsiden og hvordan
+                    <p style="color: rgba(69, 69, 69, 0.867);">Tabell med WCAG 2.0 retningslinjer er nederst på siden.
+                        <a href="#WCAG">Hopp til WCAG 2.0 tabellen</a>
+                        <br>
+                        <br>
+                        På denne siden vil du kunne lese en oversikt over analyseresultater på denne nettsiden og
+                        hvordan
                         jeg
                         har håndtert eventuelle feil eller annet. Jeg brukte oftest Lighthouse til å analysere siden
                         min, lighthouse er forhåndsinnstalert i inspeksjonsverktøyet på de fleste nettlesere. Lighthouse
                         har
                         analysert koden til nettsiden min og gitt meg tilbakemeldinger på hva jeg kan gjøre bedre
                         innenfor
-                        UU, SEO, Best Practices og SEO.</p>
+                        UU, SEO, Best Practices og SEO.
+                    </p>
                     <img src="images/desktopanalytics.webp" alt="Bilde av lighthouse analyse av pc nettsiden">
                     <img src="images/mobileanalytics.webp" alt="Bilde av lighthouse analyse av mobil nettsiden">
                     <p>Bildene over er tilsvarende analyse til både PC og mobil, PC til venstre og mobil til høyre. Noen
@@ -95,14 +99,15 @@
                         mobil og PC. Resten av tilbakemeldingene jeg fikk på Best practise var relatert til share
                         scriptene til sociale medier. Jeg fant umiddelbart ikke noen fiks på dette, men å bytte
                         nettleser fra Opera til Chrome fjernet en av de og løftet summen min på Best Practise til 83. De
-                        to andre tilbakemeldingene finner jeg ikke noen fiks på og får jeg desverre ikke gjort noe med,
+                        to andre tilbakemeldingene finner jeg ikke noen fiks på og får desverre ikke gjort noe med,
                         fordi da får jeg ikke inkludert
-                        en av kravene til oppgaven som er SOME share butttons, det er nemlig de som er grunnlaget i
+                        en av kravene til oppgaven som er sosiale medier share knapper, det er nemlig de som er
+                        grunnlaget til tilbakemeldingene i
                         følge lighthouse. Chrome bytte fikk samme resultat på alle
                         sidene.
                         <br>
                         <br>
-                        Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det er et error som jeg
+                        Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det var et error som jeg
                         fikset fort. Dette var nemlig kun et "Link are not crawlable" error som betyr at en link eller
                         tilsvarende element ikke leder deg til noen side. Lighthouse ga meg en god forklaring på
                         hvilke elementer som ledet til dette.
@@ -160,7 +165,10 @@
                         alt="Bilde av mobil lighthouse resultatene etter implementasjonen">
                     <p>Her er en annen analyse av nettsiden ved bruk av en annen tjeneste:</p>
                     <img src="images/newtest.webp" alt="Bilde av en annen analyse fra en annen analysetjeneste">
-                    <p>Etter videre jobbing på denne eksamenen kjørte jeg noen lighthouse analyser regelmessig i
+                    <p>Jeg brukte nettsiden (GTmetrix.com) for å gjennonføre denne analysen.
+                        <br>
+                        <br>
+                        Etter videre jobbing på denne eksamenen kjørte jeg noen lighthouse analyser regelmessig i
                         arbeidet mitt. Dette gjorde jeg kun for å se om noen endringer påvirket resultatene på sidene
                         mine. Resultatene endret seg opprinelig ikke etter implementeringene mine, men plutselig
                         forsvant en av tilbakemeldingene om share knappene til sociale medier. Jeg husker ikke hva
@@ -168,7 +176,8 @@
                         utgangspunket at tilbakemeldingene om share knappene til sosiale medier var rare fordi jeg hadde
                         brukt facebook, twitter og pinterest sinde egne ressurser til å generere kode til knappene.
                         Uansett var det fint at det ordnet seg. Nedenfor vil du se bilde av de nyligste oppdaterte
-                        analyseresultatene for både pc og mobil.</p>
+                        analyseresultatene for både pc og mobil.
+                    </p>
                     <img src="images/macananalytics.webp"
                         alt="Bilde av de nyligste lighthouse analysene på PC nettsidene">
                     <img src="images/macanalyticsmobile.webp"
@@ -237,7 +246,7 @@
                                 <p>Logo hadde ingen aria-label (PC 96 Accessibility) </p>
                             </div>
                             <div class="cell">
-                                <p>La til aria-label (100 Accessibility)</p>
+                                <p>La til aria-label (PC 100 Accessibility)</p>
                             </div>
                             <div class="cell-h">
                                 <p>Bildeformat</p>
@@ -252,13 +261,13 @@
                     </div>
 
 
-                    <h2>WCAG 2.0 rettningslinjer</h2>
-                    <h3>Nedenfor finner du en tabell som inneholder alle WCAG 2.0 rettningslinjene samt
+                    <h2 id="WCAG">WCAG 2.0 retningslinjer</h2>
+                    <h3>Nedenfor finner du en tabell som inneholder alle WCAG 2.0 retningslinjene samt
                         suksesskriteriene som denne nettsiden følger.</h3>
                     <div id="table-2">
                         <div class="tablegrid" style="grid-template-columns: auto auto">
                             <div class="cell-h">
-                                <h2>Rettningslinjer</h2>
+                                <h2>Retningslinjer</h2>
                             </div>
                             <div class="cell-h">
                                 <h2>Suksesskriterier <br> Nivå</h2>
@@ -352,7 +361,7 @@
                     <div class="sources">
                         <h3>Kilder:</h3>
                         <ol>
-                            <li>Eggert, E (2019, 4. Oktober) - How to Meet WCAG: <a
+                            <li>Eggert, E (W3C)(2019, 4. Oktober) - How to Meet WCAG: <a
                                     href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">link</a>
                             </li>
                             <li>uutilsynet - WCAG sortert etter prinsipp: <a
@@ -374,7 +383,7 @@
                         data-url="https://olindkri.github.io/Webutvikling-nettsted/analyse.html"
                         data-show-count="false">Tweet</a></li>
                 <li><a data-pin-do="buttonBookmark" data-pin-tall="true"
-                        href="https://www.pinterest.com/pin/create/button/"></a></li>
+                        href="https://www.pinterest.com/pin/create/button/">Pin</a></li>
             </ul>
             <div id="hide-icon" onclick="hideSocials()"><i class="fa-solid fa-minus"></i></div>
         </footer>
