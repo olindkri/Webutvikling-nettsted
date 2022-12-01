@@ -168,7 +168,7 @@ article img {
 .contact ul li {
   font-family: "Heebo", sans-serif;
   font-weight: 600;
-  background-color: #cfd8cd;
+  background-color: #f2f2f2;
   border-radius: 1rem;
   margin-bottom: 1.5vw;
   padding: 1.5rem;
@@ -341,7 +341,7 @@ iframe {
   border-radius: 0.5rem;
   font-size: 1.3rem;
   padding: 1vw;
-  background-color: #d2dfcf;
+  background-color: #ebf0ea;
 }
 
 .cell-h p {
@@ -352,12 +352,12 @@ iframe {
   letter-spacing: 0.2rem;
 }
 
-.cell-h h3 {
-  margin: 0;
+.cell-h h2 {
+  color: black;
 }
 
 .cell {
-  background-color: #ebf0ea;
+  background-color: #d2dfcf;
   font-size: 1.2rem;
   border-radius: 5px;
   text-align: left;
