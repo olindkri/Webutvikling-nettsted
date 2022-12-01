@@ -65,12 +65,15 @@
                     <h1>ANALYSE</h1>
                     <p style="color: rgba(69, 69, 69, 0.867);">Tabell med WCAG 2.0 retningslinjer er nederst på siden.
                         <a href="#WCAG">Hopp til WCAG 2.0 tabellen</a>
-                        <br>
-                        <br>
-                        På denne siden vil du kunne lese en oversikt over analyseresultater på denne nettsiden og
+                    </p>
+                    <br>
+                    <br>
+                    <p>På denne siden vil du kunne lese en oversikt over analyseresultater på denne nettsiden og
                         hvordan
                         jeg
-                        har håndtert eventuelle feil eller annet. Jeg brukte oftest Lighthouse til å analysere siden
+                        har håndtert eventuelle feil eller annet. Jeg brukte oftest <a
+                            href="https://developer.chrome.com/docs/lighthouse/overview/">Lighthouse</a> til å analysere
+                        siden
                         min, lighthouse er forhåndsinnstalert i inspeksjonsverktøyet på de fleste nettlesere. Lighthouse
                         har
                         analysert koden til nettsiden min og gitt meg tilbakemeldinger på hva jeg kan gjøre bedre
@@ -79,7 +82,8 @@
                     </p>
                     <img src="images/desktopanalytics.webp" alt="Bilde av lighthouse analyse av pc nettsiden">
                     <img src="images/mobileanalytics.webp" alt="Bilde av lighthouse analyse av mobil nettsiden">
-                    <p>Bildene over er tilsvarende analyse til både PC og mobil, PC til venstre og mobil til høyre. Noen
+                    <p>Bildene over er tilsvarende analyse til både PC og mobil, PC til venstre og mobil til høyre.
+                        Noen
                         umiddelbare ting man legger merke til er poengsummen på performance og best practices, disse
                         differerer litt mellom mobil og PC. Performance kan lett forklares og skyldes med at mobile
                         enhenter ofte er treigere en PC-er i disse tider. Det er ikke mye forksjell, men det er som
@@ -95,10 +99,12 @@
 
                     <p>Denne tilbakemeldingen angår placeholder bildene som tydeligvis ansees som for utydelig eller
                         liten. Dette fikset jeg lett ved å kun tildele relevante bilder til de tilsvarende
-                        artikkelboksene på hjemsiden. Dette ordnet tilbakemeldingen og ordnet opp på differansen mellom
+                        artikkelboksene på hjemsiden. Dette ordnet tilbakemeldingen og ordnet opp på differansen
+                        mellom
                         mobil og PC. Resten av tilbakemeldingene jeg fikk på Best practise var relatert til share
                         scriptene til sociale medier. Jeg fant umiddelbart ikke noen fiks på dette, men å bytte
-                        nettleser fra Opera til Chrome fjernet en av de og løftet summen min på Best Practise til 83. De
+                        nettleser fra Opera til Chrome fjernet en av de og løftet summen min på Best Practise til
+                        83. De
                         to andre tilbakemeldingene finner jeg ikke noen fiks på og får desverre ikke gjort noe med,
                         fordi da får jeg ikke inkludert
                         en av kravene til oppgaven som er sosiale medier share knapper, det er nemlig de som er
@@ -107,8 +113,10 @@
                         sidene.
                         <br>
                         <br>
-                        Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det var et error som jeg
-                        fikset fort. Dette var nemlig kun et "Link are not crawlable" error som betyr at en link eller
+                        Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det var et error som
+                        jeg
+                        fikset fort. Dette var nemlig kun et "Link are not crawlable" error som betyr at en link
+                        eller
                         tilsvarende element ikke leder deg til noen side. Lighthouse ga meg en god forklaring på
                         hvilke elementer som ledet til dette.
                     </p>
@@ -119,7 +127,8 @@
                         funksjonalitet.
                         <br>
                         <br>
-                        Videre til accessibility der jeg fikk en poengsum på 90 hadde jeg fortsatt 2 tilbakemeldinger
+                        Videre til accessibility der jeg fikk en poengsum på 90 hadde jeg fortsatt 2
+                        tilbakemeldinger
                         som virket relativt lett å fikse. Disse to var fargekontrast og at overskriftene ikke var i
                         rekkefølge, altså at et h3 element var over h2 eller h1. Jeg fikk gode tilbakemeldinger på
                         hvilke kontraster som burde justeres og hvilke overskrifter som var plassert feil.
@@ -128,12 +137,15 @@
                     <img src="images/header.webp"
                         alt="Bilde av tilbakemelding fra lighthouse om overskrifter som er feil plassert">
                     <p>Jeg ordnet disse ved å fjerne den feilplasserte overskriften som kun refferte til at det var
-                        kilder på bunnen av siden, jeg følte behovet for denne overskriften ikke vår serlig nædvendig.
-                        Kontrasten på overskriten endret jeg til slutt i stilarket. Etter at jeg hadde gjort begge disse
+                        kilder på bunnen av siden, jeg følte behovet for denne overskriften ikke vår serlig
+                        nædvendig.
+                        Kontrasten på overskriten endret jeg til slutt i stilarket. Etter at jeg hadde gjort begge
+                        disse
                         endringene fikk jeg en accessibility poengsum på 100.
                         <br>
                         <br>
-                        For å få 100 accessibility på tvers av alle enheter analyserte jeg også PC siden med lighthouse
+                        For å få 100 accessibility på tvers av alle enheter analyserte jeg også PC siden med
+                        lighthouse
                         og fikk en separat tilbakemelding som ikke mobilformatet møtte på. Dette var at logoen på
                         hjemsiden
                         min ikke hadde en form for alt tekst, dette følte jeg opprinelig den ikke hadde noe behov
@@ -145,35 +157,44 @@
                         på både PC og mobil.
                         <br>
                         <br>
-                        Performance aspektet av analysen varierer svært mye, resultatene kan variere fra 80 opp til 96
+                        Performance aspektet av analysen varierer svært mye, resultatene kan variere fra 80 opp til
+                        96
                         fra hver
                         analyse, (Mobilresultatene er vanligvis dårligst, PC når høyere resultater som 96 poengsum).
                         Grunnlaget til hvorfor jeg får disse varierende resultatene har jeg fått
-                        tilbakemeldinger om av lighthouse, fontawesome, normalize.css og bildestørrelsene mine påvirker
-                        hastigheten. fontawesome og normalize.css får jeg ikke gjort så mye med, så jeg gjør det jeg kan
+                        tilbakemeldinger om av lighthouse, fontawesome, normalize.css og bildestørrelsene mine
+                        påvirker
+                        hastigheten. fontawesome og normalize.css får jeg ikke gjort så mye med, så jeg gjør det jeg
+                        kan
                         og endrer alle bildeformatene fra jpg og png til webp for mer hastighet. Etter endringene av
-                        bildeformatet kjørte jeg lighthouse på nytt, men fikk ingen betraktelige endringer i forhold til
+                        bildeformatet kjørte jeg lighthouse på nytt, men fikk ingen betraktelige endringer i forhold
+                        til
                         hastighet.
                     </p>
                     <img src="images/performance.webp"
                         alt="Bilde an tilbakemelding fra lighthouse om hastigheten på nettsiden.">
-                    <p>Hvis vi skal sammenligne resultatene fra starten til slutten av prosessen vil jeg si at det ikke
-                        var serlig mye å pirke på, men jeg føler jeg endte med gode resultater. Nedenfor ser du de nye
+                    <p>Hvis vi skal sammenligne resultatene fra starten til slutten av prosessen vil jeg si at det
+                        ikke
+                        var serlig mye å pirke på, men jeg føler jeg endte med gode resultater. Nedenfor ser du de
+                        nye
                         lighthouse resultatene etter implementasjonen av analysekritikken.</p>
                     <img src="images/afterdesktop.webp" alt="Bilde av PC lighthouse resultatene etter implementasjonen">
                     <img src="images/aftermobile.webp"
                         alt="Bilde av mobil lighthouse resultatene etter implementasjonen">
                     <p>Her er en annen analyse av nettsiden ved bruk av en annen tjeneste:</p>
                     <img src="images/newtest.webp" alt="Bilde av en annen analyse fra en annen analysetjeneste">
-                    <p>Jeg brukte nettsiden (GTmetrix.com) for å gjennonføre denne analysen.
+                    <p>Jeg brukte nettsiden <a href="https://gtmetrix.com">GTmetrix</a> for å gjennonføre denne
+                        analysen.
                         <br>
                         <br>
                         Etter videre jobbing på denne eksamenen kjørte jeg noen lighthouse analyser regelmessig i
-                        arbeidet mitt. Dette gjorde jeg kun for å se om noen endringer påvirket resultatene på sidene
+                        arbeidet mitt. Dette gjorde jeg kun for å se om noen endringer påvirket resultatene på
+                        sidene
                         mine. Resultatene endret seg opprinelig ikke etter implementeringene mine, men plutselig
                         forsvant en av tilbakemeldingene om share knappene til sociale medier. Jeg husker ikke hva
                         feilmeldingen het, men den endret min best practises poengsum fra 83 til 92! Jeg syntes i
-                        utgangspunket at tilbakemeldingene om share knappene til sosiale medier var rare fordi jeg hadde
+                        utgangspunket at tilbakemeldingene om share knappene til sosiale medier var rare fordi jeg
+                        hadde
                         brukt facebook, twitter og pinterest sinde egne ressurser til å generere kode til knappene.
                         Uansett var det fint at det ordnet seg. Nedenfor vil du se bilde av de nyligste oppdaterte
                         analyseresultatene for både pc og mobil.
@@ -183,7 +204,60 @@
                     <img src="images/macanalyticsmobile.webp"
                         alt="Bilde av de nyligste lighthouse analysene på mobil nettsidene">
 
-                    <h2>Oversikt over endringer etter analyse (Med resultater)</h2>
+                    <h2>Heuristisk evaluering</h2>
+                    <h3>Jeg har basert min heuristisk evaluering etter Nielsen Norman Group sitt format. <a
+                            href="https://www.nngroup.com/articles/ten-usability-heuristics/">(Nielsen, J - 2020)</a>
+                    </h3>
+
+                    <p>Etter jeg har implementert egne endringer fra analyseresultatene ovenfor skal jeg ta en
+                        heuristisk evaluering på egenhånd for å oppdage imperfeksjoner på nettsidene mine som ikke
+                        analyseverktøyene gjennkjenner. Jeg skal som sagt bruke Nielsen Norman Group sin heuristikkliste
+                        for å evaluere siden min. Alle tiltakene som denne listen går gjennom er ikke relevant for
+                        nettsiden min siden de ofte omtaler mer omfattende problemer med større og mer kundebaserte
+                        nettsider, jeg vil derfor kuin snakke rundt de punktene jeg føler er relevant for min heuristike
+                        evaluering av nettsiden min.
+                        <br>
+                    </p>
+                    <h3>#1: Visibility of system status</h3>
+                    <p>
+                        "The design should always keep users informed about what is going on, through appropriate
+                        feedback within a reasonable amount of time." (Nielsen, J - 2020)
+                        <br>
+                        <br>
+                        Denne linjen fra NNG (Nielsen Norman Group) sin egen nettside tilsvarer at nettsiden din burde
+                        ha indikasjoner tilsvarende til hva som skjer eller er relevant av innholdet på siden din.
+                        Nettsiden min inneholder ingen ekstra form for innhold utenom de tilsvarende sidene til
+                        menypunktene i navigasjonsbaren, men jeg tydeliggjør fortsattt for brukeren hvilken side man er
+                        lokalisert på gjennom kontrastskifte i navigasjonsbaren. Dette vil jeg si er en implentering som
+                        følger NNG sine anbefalinger.
+                    </p>
+                    <h3>#2: Match between system and the real world</h3>
+                    <p>
+                        "The design should speak the users' language. Use words, phrases, and concepts familiar to the
+                        user, rather than internal jargon. Follow real-world conventions, making information appear in a
+                        natural and logical order." (Nielsen, J - 2020)
+                        <br>
+                        <br>
+                        Dette kriterie anbefaler at nettsiden din følger et internasjonalt format som følger den logiske
+                        strukturen som de fleste er vant til på internettet. Bruk av gjenkjennelige ord og logoer for å
+                        ikke forvirre brukeren. Dette kritere føler jeg at nettsiden min følger godt, siden min fremstår
+                        som minimalistisk og tar i bruk gjennskjenelige tjenester for navigering som en navigasjonsbar
+                        og hamburgermeny. Klikkbare knapper på siden min tydeligjøres ikke unormalt og klikkbare linker
+                        er også gjennkjennelige ved den standard blå fargen. Ellers er det ingenting på siden som
+                        er utenfor det vanlige.
+                    </p>
+                    <h3>#4: Consistency and standards</h3>
+                    <p>"Users should not have to wonder whether different words, situations, or actions mean the same
+                        thing. Follow platform and industry conventions." (Nielsen, J - 2020)
+                        <br>
+                        <br>
+                        Hva NNG prøver å få fram med dette punktet på listen deres er at nettsiden din ikke burde være
+                        forvirrende i sammenheng med handlinger og ordbruk på siden din. Nettsiden din burde være
+                        direkte og forsåelig for brukeren, ikke la brukeren din havne i en situasjon hvor den ikke
+                        skjønner hva som skjer.
+                    </p>
+
+                    <h2>Oversikt over endringer / implementering etter analyse (Med analyseresultater)</h2>
 
                     <div id="table">
                         <div class="tablegrid" style="grid-template-columns: auto auto auto">
@@ -260,9 +334,10 @@
                         </div>
                     </div>
 
-
-                    <h2 id="WCAG">WCAG 2.0 retningslinjer</h2>
-                    <h3>Nedenfor finner du en tabell som inneholder alle WCAG 2.0 retningslinjene samt
+                    <h2 id="WCAG">Tilgjengelighetserklæring (WCAG 2.0 retningslinjer)</h2>
+                    <h3>Nedenfor finner du en tabell som inneholder alle WCAG 2.0 retningslinjene <a
+                            href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">(W3C
+                            - 2019)</a> samt
                         suksesskriteriene som denne nettsiden følger.</h3>
                     <div id="table-2">
                         <div class="tablegrid" style="grid-template-columns: auto auto">
