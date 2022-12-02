@@ -63,11 +63,13 @@
             <section>
                 <article class="main-article">
                     <h1>ANALYSE</h1>
-                    <p style="color: rgba(69, 69, 69, 0.867);">Tabell med WCAG 2.0 retningslinjer er nederst på siden.
+                    <p style="color: rgba(69, 69, 69, 0.867);">Tilgjengelighetserklæring med WCAG 2.0 retningslinjer er
+                        nederst på siden.
                         <a href="#WCAG">Hopp til WCAG 2.0 tabellen</a>
                     </p>
                     <br>
                     <br>
+                    <h2>Analyse av UU og SEO</h2>
                     <p>På denne siden vil du kunne lese en oversikt over analyseresultater på denne nettsiden og
                         hvordan
                         jeg
@@ -78,7 +80,7 @@
                         har
                         analysert koden til nettsiden min og gitt meg tilbakemeldinger på hva jeg kan gjøre bedre
                         innenfor
-                        UU, SEO, Best Practices og SEO.
+                        Performance, Accessibility (UU), Best Practices og SEO.
                     </p>
                     <img src="images/desktopanalytics.webp" alt="Bilde av lighthouse analyse av pc nettsiden">
                     <img src="images/mobileanalytics.webp" alt="Bilde av lighthouse analyse av mobil nettsiden">
@@ -206,28 +208,31 @@
 
                     <h2>Heuristisk evaluering</h2>
                     <h3>Jeg har basert min heuristisk evaluering etter Nielsen Norman Group sitt format. <a
-                            href="https://www.nngroup.com/articles/ten-usability-heuristics/">(Nielsen, J - 2020)</a>
+                            href="https://www.nngroup.com/articles/ten-usability-heuristics/">(Nielsen, 2020)</a>
                     </h3>
 
                     <p>Etter jeg har implementert egne endringer fra analyseresultatene ovenfor skal jeg ta en
-                        heuristisk evaluering på egenhånd for å oppdage imperfeksjoner på nettsidene mine som ikke
+                        heuristisk evaluering på egenhånd for å oppdage ufullkommenheter på nettsidene mine som ikke
                         analyseverktøyene gjennkjenner. Jeg skal som sagt bruke Nielsen Norman Group sin heuristikkliste
-                        for å evaluere siden min. Alle tiltakene som denne listen går gjennom er ikke relevant for
+                        for å evaluere siden min. Alle anbefalingene som denne listen går gjennom er ikke relevant for
                         nettsiden min siden de ofte omtaler mer omfattende problemer med større og mer kundebaserte
-                        nettsider, jeg vil derfor kuin snakke rundt de punktene jeg føler er relevant for min heuristike
-                        evaluering av nettsiden min.
+                        nettsider. Jeg vil derfor kun snakke rundt de punktene jeg føler er relevant for min heuristiske
+                        evaluering av nettsiden min. Punktene som jeg skriver om nedenfor er nødvendigvis ikke knyttet
+                        til noen endring/implementering heller, mange av de er kun drøfting og vurdering av min egen
+                        nettside i forhold til Nielsen Norman Group sine anbefalinger.
                         <br>
                     </p>
                     <h3>#1: Visibility of system status</h3>
                     <p>
                         "The design should always keep users informed about what is going on, through appropriate
-                        feedback within a reasonable amount of time." (Nielsen, J - 2020)
+                        feedback within a reasonable amount of time." (Nielsen, 2020)
                         <br>
                         <br>
                         Denne linjen fra NNG (Nielsen Norman Group) sin egen nettside tilsvarer at nettsiden din burde
                         ha indikasjoner tilsvarende til hva som skjer eller er relevant av innholdet på siden din.
                         Nettsiden min inneholder ingen ekstra form for innhold utenom de tilsvarende sidene til
-                        menypunktene i navigasjonsbaren, men jeg tydeliggjør fortsattt for brukeren hvilken side man er
+                        menypunktene i navigasjonsbaren, men jeg gjorde en endring på navigasjonen for å tydeliggjøre
+                        brukeren om hvilken side man er
                         lokalisert på gjennom kontrastskifte i navigasjonsbaren. Dette vil jeg si er en implentering som
                         følger NNG sine anbefalinger.
                     </p>
@@ -235,7 +240,7 @@
                     <p>
                         "The design should speak the users' language. Use words, phrases, and concepts familiar to the
                         user, rather than internal jargon. Follow real-world conventions, making information appear in a
-                        natural and logical order." (Nielsen, J - 2020)
+                        natural and logical order." (Nielsen, 2020)
                         <br>
                         <br>
                         Dette kriterie anbefaler at nettsiden din følger et internasjonalt format som følger den logiske
@@ -248,16 +253,56 @@
                     </p>
                     <h3>#4: Consistency and standards</h3>
                     <p>"Users should not have to wonder whether different words, situations, or actions mean the same
-                        thing. Follow platform and industry conventions." (Nielsen, J - 2020)
+                        thing. Follow platform and industry conventions." (Nielsen, 2020)
                         <br>
                         <br>
                         Hva NNG prøver å få fram med dette punktet på listen deres er at nettsiden din ikke burde være
                         forvirrende i sammenheng med handlinger og ordbruk på siden din. Nettsiden din burde være
                         direkte og forsåelig for brukeren, ikke la brukeren din havne i en situasjon hvor den ikke
                         skjønner hva som skjer.
+                        <br>
+                        <br>
+                        Jeg føler selv at denne siden er tydelig og minst forvirrende. den er minimalistisk og har et
+                        format som er gjenkjennelig og ofte sett på majoriteten av nettsider på nettet. Etter min
+                        testing er det heller ikke mulig å rote seg bort på nettsiden, siden den ikke inneholder serlig
+                        mange sider. Alle sidene er også mulig å navigere til gjennom navigasjonen.
+                    </p>
+                    <h3>#6: Recognition rather than recall</h3>
+                    <p>"Minimize the user's memory load by making elements, actions, and options visible. The user
+                        should
+                        not have to remember information from one part of the interface to another. Information required
+                        to use the design (e.g. field labels or menu items) should be visible or easily retrievable when
+                        needed." (Nielsen, 2020)
+                        <br>
+                        <br>
+                        "Minimize the user's memory load", dette betyr at brukeren ikk burde måtte huske mye for å bruke
+                        nettsiden din. Som forklart i sitatet ovenfor er det viktig at brukeren ikke må huske noen form
+                        for informasjon på sidene dine som han må huske for å kunne forstå eller bruke de andre sidene
+                        riktig. Nettsiden din burde heller gjenkjenne innholdet ditt isteden for å huske det.
+                        <br>
+                        <br>
+                        Min nettside er minimalistisk og er tydelig på hva som er klikkbart og eier funksjonalitet for
+                        brukeren, og dette føler jeg at brukeren derfor heller vil gjennkjenne på alle sidene istedet
+                        for å huske de. Alle knapper og linker har tilsvarende farge og utseende gjennom hele siden.
+                    </p>
+                    <h3>#8: Aesthetic and minimalist design</h3>
+                    <p>"Interfaces should not contain information that is irrelevant or rarely needed. Every extra unit
+                        of information in an interface competes with the relevant units of information and diminishes
+                        their relative visibility." (Nielsen, 2020)
+                        <br>
+                        <br>
+                        I følge dette punktet anbefaler NNG at nettsiden din ikke inneholder irrelevant informasjon som
+                        brukerne ikke har noen bruk for. Uten denne irrelevante informasjonen, men med opplysende og
+                        direkte innhold på siden din vil brukeren finne det han leter etter raskest og nettsiden din vil
+                        føler mer minimalistisk.
+                        <br>
+                        <br>
+                        Selv, føler jeg at nettsiden min har et minimalistisk design. Jeg har endret nettsiden min for å
+                        være opplysende men minimalistisk siden først deleksamen, det var dette designet jeg søkte
+                        etter, så jeg føler at nettsiden min følger disse kritereiene godt.
                     </p>
 
-                    <h2>Oversikt over endringer / implementering etter analyse (Med analyseresultater)</h2>
+                    <h2>Tabelloversikt over endring/implementering etter analyse (Med analyseresultater)</h2>
 
                     <div id="table">
                         <div class="tablegrid" style="grid-template-columns: auto auto auto">
@@ -331,13 +376,24 @@
                             <div class="cell">
                                 <p>Endret filene til webp (Ingen betraktelige endringer)</p>
                             </div>
+                            <div class="cell-h">
+                                <p>Lokalisering</p>
+                            </div>
+                            <div class="cell">
+                                <p>Brukeren viste ikke nødvendigvis hvilken side han var lokalisert på (Heuristisk
+                                    evaluering)</p>
+                            </div>
+                            <div class="cell">
+                                <p>Endret fargen på det menypunktet du nåværende er på til hvit og økte
+                                    skriftstørrelsen. (Heuristisk evaluering)</p>
+                            </div>
                         </div>
                     </div>
 
                     <h2 id="WCAG">Tilgjengelighetserklæring (WCAG 2.0 retningslinjer)</h2>
                     <h3>Nedenfor finner du en tabell som inneholder alle WCAG 2.0 retningslinjene <a
-                            href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">(W3C
-                            - 2019)</a> samt
+                            href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">(W3C,
+                            2019)</a> samt
                         suksesskriteriene som denne nettsiden følger.</h3>
                     <div id="table-2">
                         <div class="tablegrid" style="grid-template-columns: auto auto">
@@ -436,11 +492,15 @@
                     <div class="sources">
                         <h3>Kilder:</h3>
                         <ol>
-                            <li>Eggert, E (W3C)(2019, 4. Oktober) - How to Meet WCAG: <a
-                                    href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">link</a>
+                            <li>W3C, Eggert, E (2019, 4. Oktober) - How to Meet WCAG: <a
+                                    href="https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times">https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-seizure-three-times</a>
                             </li>
                             <li>uutilsynet - WCAG sortert etter prinsipp: <a
-                                    href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713">link</a>
+                                    href="https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713">https://www.uutilsynet.no/wcag-standarden/wcag-sortert-etter-prinsipp/713</a>
+                            </li>
+                            <li> Nielsen, J. (2020, 15. november) - 10 Usability Heuristics for User Interface Design:
+                                <a
+                                    href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a>
                             </li>
                         </ol>
                     </div>
