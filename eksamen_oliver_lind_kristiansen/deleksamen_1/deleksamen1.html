@@ -1,0 +1,75 @@
+<!-- 21 feilkoder dukket opp i valideringsprogrammet -->
+
+<!DOCTYPE html>
+<!--Error: Start tag seen without seeing a doctype first. Expected <!DOCTYPE html>.
+    Manglet <!DOCTYPE html> element, denne forteller nettleseren hvilke dokument den jobber med. -->
+<html lang="no">
+<!--Warning: Consider adding a lang attribute to the html start tag to declare the language of this document. 
+    Lagt til lang="no" for norsk språktilgengelighet på nettsiden -->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--Error: Attribute #" not allowed on element link at this point. 
+        Manglet " for å lukke href linken til stilarket, dette skapte følgefeil -->
+    <title>Web eksamen del 1</title>
+</head>
+<!--Error: Stray start tag head. 
+    Flyttet <head> elementet over <body> elementet, denne skal alltid være over body -->
+
+<body>
+    <nav>
+        <h3>Logo</h3>
+        <!--Warning: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools). 
+            Endret logo teksten fra <h1> til <h3> fordi den er mindre prioritert i forhold til andre overskrifter.  -->
+        <ul>
+            <li> <a href="#">Boatswain schooner</a></li>
+            <li> <a href="#">Account lookout</a></li>
+            <li> <a href="#">Sail ho shrouds</a></li>
+        </ul>
+        <!--Error: Element li not allowed as child of element body in this context. (Suppressing further errors from this subtree.) 
+            Manglet <ul> element ovenfor <li> elementer, <li> elementer har ingen funksjon uten <ul> elementet. <ul> deklarerer en liste, <li> lager punkter. -->
+    </nav>
+    <!-- Flyttet <nav> elemtentet over <header> elementet for korrekt utforming, dette var nok bare mitt problem... -->
+    <header>
+        <h1>Yar Pirate Ipsum</h1>
+        <p>Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast yardarm. Pinnace holystone mizzenmast
+            quarter crow's nest nipperkin grog yardarm hempen halter furl.</p>
+        <a class="button" href="#">Les mer</a>
+        <!-- Manglet href attribut, knappen hadde opprinelig ingen funksjon -->
+    </header>
+    <main>
+        <article>
+            <h2>Prow scuttle</h2>
+            <!--Warning: Consider using the h1 element as a top-level heading only (all h1 elements are treated as top-level headings by many screen readers and other tools). 
+                Endret alle overskriftene i article elementene til <h2>, disse er mindre prioritert i forhold til hovedoverskriften -->
+            <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
+            </p>
+            <a href="#">Les mer</a>
+        </article>
+        <!--Error: Unclosed element article. 
+            Manglet closing tag til <article> elementet -->
+        <article>
+            <h2>Jack Tar transom</h2>
+            <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
+            </p>
+            <a href="#">Les mer</a>
+        </article>
+        <article>
+            <h2>Trysail Sail</h2>
+            <p>Deadlights jack lad schooner scallywag dance the hempen jig carouser broadside cable strike colors.
+            </p>
+            <a href="#">Les mer</a>
+        </article>
+    </main>
+    <!-- Unødvendig div id av main <div id="main"> , endret til vanlig <main> element -->
+    <footer>
+        <a>Twitter</a>
+        <a>Facebook</a>
+        <a>Instagram</a>
+        <!-- Span er ikke nødvendig her, bruk heller <a> -->
+    </footer>
+</body>
+
+</html>
