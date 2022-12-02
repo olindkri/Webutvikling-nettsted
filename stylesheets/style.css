@@ -413,7 +413,7 @@ textarea {
 
 input[type="submit"] {
   background-color: #8ba977;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 12px 5vw;
   font-size: 1.4rem;
   border: none;
@@ -424,7 +424,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #a5bd96;
-  color: black;
   transform: scale(1.1);
   transition: 300ms;
 }

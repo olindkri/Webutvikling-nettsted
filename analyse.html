@@ -13,13 +13,17 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Eksamensnettside webutvikling">
     <meta property="og:image" content="https://olindkri.github.io/Webutvikling-nettsted/images/stockimage.jpg">
+    <meta property="og:image:alt" content="Bilde av tåkebelagt skog.">
     <meta property="og:description" content="Dette er min første fullførte nettside innenfor webutvikling emne.">
+    <meta property="og:locale" content="nb_NO">
 
     <!-- Twitter -->
     <meta name="twitter:title" content="Eksamensnettside webutvikling">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://olindkri.github.io/Webutvikling-nettsted/images/stockimage.jpg">
+    <meta name="twitter:image:alt" content="Bilde av tåkebelagt skog.">
     <meta name="twitter:description" content="Dette er min første fullførte nettside innenfor webutvikling emne.">
+    <meta name="twitter:site" content="@olindkri">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -90,11 +94,11 @@
                         differerer litt mellom mobil og PC. Performance kan lett forklares og skyldes med at mobile
                         enhenter ofte er treigere en PC-er i disse tider. Det er ikke mye forksjell, men det er som
                         regel litt.
-                        <br>
-                        <br>
-                        Hvorfor best practises sin poengsum er lavere på mobil i forhold til PC skyldes en
-                        tilbakemelding jeg fikk av lighthouse analysen tidligere.
                     </p>
+
+                    <h3>Best Practices</h3>
+                    <p>Hvorfor best practises sin poengsum er lavere på mobil i forhold til PC skyldes en
+                        tilbakemelding jeg kun fikk på mobilanalysen av lighthouse tidligere.</p>
 
                     <img src="images/lowresimage.webp"
                         alt="Bilde av en tilbakemelding av analysen som sier at bildestørrelsen er for liten.">
@@ -113,28 +117,32 @@
                         grunnlaget til tilbakemeldingene i
                         følge lighthouse. Chrome bytte fikk samme resultat på alle
                         sidene.
-                        <br>
-                        <br>
-                        Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det var et error som
+                    </p>
+
+                    <h3>SEO</h3>
+                    <p>Videre til SEO ligger vi på et resultat av 92 som ikke er så værst, men det var et error som
                         jeg
                         fikset fort. Dette var nemlig kun et "Link are not crawlable" error som betyr at en link
                         eller
                         tilsvarende element ikke leder deg til noen side. Lighthouse ga meg en god forklaring på
-                        hvilke elementer som ledet til dette.
-                    </p>
+                        hvilke elementer som ledet til dette.</p>
+
+
                     <img src="images/crawl.webp"
                         alt="Bilde av lighthouse som sier at en link i koden ikke er crawlable.">
                     <p>Jeg fjernet denne tilbakemeldingen ved å gjøre om "a" elementet til en "div". Dette fjernet
                         tilbakemeldingen og ga meg et resultat med 100 poengsum på SEO. endringen fjernet ingen
                         funksjonalitet.
-                        <br>
-                        <br>
-                        Videre til accessibility der jeg fikk en poengsum på 90 hadde jeg fortsatt 2
+                    </p>
+
+                    <h3>Accessibility</h3>
+                    <p>Videre til accessibility der jeg fikk en poengsum på 90 hadde jeg fortsatt 2
                         tilbakemeldinger
                         som virket relativt lett å fikse. Disse to var fargekontrast og at overskriftene ikke var i
                         rekkefølge, altså at et h3 element var over h2 eller h1. Jeg fikk gode tilbakemeldinger på
-                        hvilke kontraster som burde justeres og hvilke overskrifter som var plassert feil.
-                    </p>
+                        hvilke kontraster som burde justeres og hvilke overskrifter som var plassert feil.</p>
+
+
                     <img src="images/contrast.webp" alt="Bilde av tilbakemelding fra lighthouse om fargekontrast.">
                     <img src="images/header.webp"
                         alt="Bilde av tilbakemelding fra lighthouse om overskrifter som er feil plassert">
@@ -159,6 +167,22 @@
                         på både PC og mobil.
                         <br>
                         <br>
+                        Jeg brukte videre WebAIM sitt <a href="https://wave.webaim.org">WAVE</a> verktøy for å få end
+                        grundigere analyse av den universelle
+                        utformingen på sidene mine. Ettersom at jeg her implementert alle endringene fra resultatene jeg
+                        fikk fra lighthouse analysene oppgaget WAVE ingen error eller contrast error på de fleste
+                        sidene, men den oppdaget en kontrast error på "kontakt oss" siden.
+                    </p>
+                    <img src="images/contrasterror.webp"
+                        alt="Bilde av WAVE analyse error om et svakt kontrast element på kontakt oss siden.">
+                    <img src="images/contrasterrorpos.webp"
+                        alt="Bilde av WAVE analyse error om et svakt kontrast element, dette var på send inn knappen.">
+                    <p>Jeg antok at opphavet til denne tilbakemeldingen var den hvite teksten på den grønne knappen, så
+                        jeg forsøkte å endre fargen på teksten til svart. Endringen av fargen på "send inn" knappen
+                        fjernet erroren og etterlot meg med 0 erorr etter WAVE analyser på alle sidene mine.</p>
+
+                    <h3>Performance</h3>
+                    <p>
                         Performance aspektet av analysen varierer svært mye, resultatene kan variere fra 80 opp til
                         96
                         fra hver
@@ -230,6 +254,7 @@
                         <br>
                         Denne linjen fra NNG (Nielsen Norman Group) sin egen nettside tilsvarer at nettsiden din burde
                         ha indikasjoner tilsvarende til hva som skjer eller er relevant av innholdet på siden din.
+                        <br>
                         Nettsiden min inneholder ingen ekstra form for innhold utenom de tilsvarende sidene til
                         menypunktene i navigasjonsbaren, men jeg gjorde en endring på navigasjonen for å tydeliggjøre
                         brukeren om hvilken side man er
@@ -245,10 +270,12 @@
                         <br>
                         Dette kriterie anbefaler at nettsiden din følger et internasjonalt format som følger den logiske
                         strukturen som de fleste er vant til på internettet. Bruk av gjenkjennelige ord og logoer for å
-                        ikke forvirre brukeren. Dette kritere føler jeg at nettsiden min følger godt, siden min fremstår
-                        som minimalistisk og tar i bruk gjennskjenelige tjenester for navigering som en navigasjonsbar
+                        ikke forvirre brukeren.
+                        <br>
+                        Nettsiden min følger dette kriterie godt, siden min fremstår
+                        som minimalistisk og tar i bruk gjennkjenelige tjenester for navigering som en navigasjonsbar
                         og hamburgermeny. Klikkbare knapper på siden min tydeligjøres ikke unormalt og klikkbare linker
-                        er også gjennkjennelige ved den standard blå fargen. Ellers er det ingenting på siden som
+                        er også gjennkjennelige ved bruk av den normale blå fargen. Ellers er det ingenting på siden som
                         er utenfor det vanlige.
                     </p>
                     <h3>#4: Consistency and standards</h3>
@@ -261,11 +288,12 @@
                         direkte og forsåelig for brukeren, ikke la brukeren din havne i en situasjon hvor den ikke
                         skjønner hva som skjer.
                         <br>
-                        <br>
-                        Jeg føler selv at denne siden er tydelig og minst forvirrende. den er minimalistisk og har et
+                        Jeg føler selv at denne siden er tydelig og minst mulig forvirrende. den er minimalistisk og har
+                        et
                         format som er gjenkjennelig og ofte sett på majoriteten av nettsider på nettet. Etter min
-                        testing er det heller ikke mulig å rote seg bort på nettsiden, siden den ikke inneholder serlig
-                        mange sider. Alle sidene er også mulig å navigere til gjennom navigasjonen.
+                        observasjon er det heller ikke mulig å rote seg bort på nettsiden, den ikke inneholder serlig
+                        mange sider. Alle sidene er også mulig å navigere til og fra gjennom
+                        navigasjonbar/hamburgermeny.
                     </p>
                     <h3>#6: Recognition rather than recall</h3>
                     <p>"Minimize the user's memory load by making elements, actions, and options visible. The user
@@ -275,11 +303,13 @@
                         needed." (Nielsen, 2020)
                         <br>
                         <br>
-                        "Minimize the user's memory load", dette betyr at brukeren ikk burde måtte huske mye for å bruke
+                        "Minimize the user's memory load", dette betyr at brukeren ikke burde måtte huske mye for å
+                        bruke
                         nettsiden din. Som forklart i sitatet ovenfor er det viktig at brukeren ikke må huske noen form
-                        for informasjon på sidene dine som han må huske for å kunne forstå eller bruke de andre sidene
-                        riktig. Nettsiden din burde heller gjenkjenne innholdet ditt isteden for å huske det.
-                        <br>
+                        for informasjon på en av sidene dine som han videre må huske for å kunne forstå eller bruke de
+                        andre sidene
+                        optimalt. Nettsiden din burde heller få brukeren til å gjenkjenne innholdet ditt isteden for å
+                        huske det.
                         <br>
                         Min nettside er minimalistisk og er tydelig på hva som er klikkbart og eier funksjonalitet for
                         brukeren, og dette føler jeg at brukeren derfor heller vil gjennkjenne på alle sidene istedet
@@ -294,15 +324,17 @@
                         I følge dette punktet anbefaler NNG at nettsiden din ikke inneholder irrelevant informasjon som
                         brukerne ikke har noen bruk for. Uten denne irrelevante informasjonen, men med opplysende og
                         direkte innhold på siden din vil brukeren finne det han leter etter raskest og nettsiden din vil
-                        føler mer minimalistisk.
+                        føles mer minimalistisk.
                         <br>
-                        <br>
-                        Selv, føler jeg at nettsiden min har et minimalistisk design. Jeg har endret nettsiden min for å
-                        være opplysende men minimalistisk siden først deleksamen, det var dette designet jeg søkte
+                        Selv, føler jeg at nettsiden min har et minimalistisk design. Jeg har designet nettsiden min til
+                        å
+                        være opplysende men minimalistisk siden første deleksamen, det var dette designet jeg søkte
                         etter, så jeg føler at nettsiden min følger disse kritereiene godt.
                     </p>
 
                     <h2>Tabelloversikt over endring/implementering etter analyse (Med analyseresultater)</h2>
+                    <h3>Oversikten visen resultatene jeg fikk av analysene (FØR), endringene jeg gjorde for å løse
+                        problemene (ETTER) og samtlige forbedringer resultatene fikk etter senere analyse.</h3>
 
                     <div id="table">
                         <div class="tablegrid" style="grid-template-columns: auto auto auto">
